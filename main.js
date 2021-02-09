@@ -1,7 +1,9 @@
 var app = new Vue({
-  el: '#container',
+  el: '#app',
   data: {
-    cds: []
+    cds: [],
+    selected: '',
+    genres: ['All', 'Rock', 'Pop', 'Jazz', 'Metal']
   },
   mounted(){
     axios
@@ -11,5 +13,6 @@ var app = new Vue({
           this.cds.push(result.data.response[i]);
         }
       })
+      console.log(this.selected);
   }
 });

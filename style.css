@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
 }
 
-#container {
+.container {
     width: 1070px;
     height: 100%;
     margin: 0 auto;
@@ -20,12 +20,27 @@ header {
     width: 100%;
     height: 70px;
     background: rgb(46, 58, 70);
+    text-align: center;
+}
+header .logo{
+  height: 100%;
+  display: inline-block;
 }
 header img {
     height: 50px;
-    margin-top: 10px;
+    margin: 10px 20px 0 0 ;
+    vertical-align: middle;
 }
-
+header .genres{
+  display: inline-block;
+}
+header .genres select{
+  background-color: inherit;
+  color: #70797E;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid #70797E;
+}
 .cds-container {
     display: flex;
     justify-content: center;
